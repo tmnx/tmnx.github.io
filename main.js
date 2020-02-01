@@ -1,4 +1,3 @@
-
 // Animation for all entities
 function Animation(spriteSheet, startX, startY, frameWidth, frameHeight, frameDuration, frames, loop, reverse) {
     this.spriteSheet = spriteSheet;
@@ -310,4 +309,3 @@ ASSET_MANAGER.downloadAll(function () {
 
     console.log(gameEngine.entities);
 });
-
