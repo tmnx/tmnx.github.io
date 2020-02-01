@@ -280,7 +280,7 @@ var ASSET_MANAGER = new AssetManager();
 
 ASSET_MANAGER.queueDownload("./img/MainCharacter.png");
 ASSET_MANAGER.queueDownload("./img/bg.gif");
-ASSET_MANAGER.queueDownload("./img/bat.png/");
+ASSET_MANAGER.queueDownload("./img/bat.png");
 
 ASSET_MANAGER.downloadAll(function () {
     console.log("starting up da sheild");
@@ -293,10 +293,10 @@ ASSET_MANAGER.downloadAll(function () {
 
     var maincharacter = new MainCharacter(gameEngine);
     // var healthbar = new HealthBar(gameEngine);
-    var bat = new Bat(gameEngine, ASSET_MANAGER.getAsset("./img/bat.png/"), 67);
-    var bat2 = new Bat(gameEngine, ASSET_MANAGER.getAsset("./img/bat.png/"), 80);
-    var bat3 = new Bat(gameEngine, ASSET_MANAGER.getAsset("./img/bat.png/"), 140);
-    var bat4 = new Bat(gameEngine, ASSET_MANAGER.getAsset("./img/bat.png/"), 30);
+    var bat = new Bat(gameEngine, ASSET_MANAGER.getAsset("./img/bat.png"), 67);
+    var bat2 = new Bat(gameEngine, ASSET_MANAGER.getAsset("./img/bat.png"), 80);
+    var bat3 = new Bat(gameEngine, ASSET_MANAGER.getAsset("./img/bat.png"), 140);
+    var bat4 = new Bat(gameEngine, ASSET_MANAGER.getAsset("./img/bat.png"), 30);
     bat2.y = 230;
     bat3.y = 250;
 
